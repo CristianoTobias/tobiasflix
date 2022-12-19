@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TOBIASFLIX</title>
+    <link rel="stylesheet" href="Lib/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header id="cabecalho" class="fixed-top">
+      <div class="navbar navbar-expand-md">
+        <h1>TOBIASFLIX</h1>
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target=".nav-geral"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <nav class="collapse navbar-collapse nav-geral justify-content-center">
+          <ul class="nav nav-pills navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="#ini">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#favo">Favoritos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#fil">Filmes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#seri">Séries</a>
+            </li>
+          </ul>
+        </nav>
+
+        <nav class="collapse navbar-collapse nav-geral justify-content-end">
+          <ul class="nav nav-pills navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pesquisar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Notificações </a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Perfil</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main data-bs-spy="scroll" data-bs-target="#cabecalho">
+      <div class="inicio mb-5" id="ini">
+        <img
+          src="imagens/Tropa-de-Elite-2007-Movie-Scene-6.jpg"
+          alt="Filme tropa de elite"
+        />
+        <div class="filme-titulo">
+          <h4>Tropa de Elite</h4>
+          <p>Direção: José Padilha</p>
+          <p>Roteiro: Luiz Eduardo Soares, José Padilha</p>
+          <p>Elenco: Wagner Moura, Caio Junqueira, André Ramiro</p>
+          <button type="button" class="btn btn-primary">Assistir</button>
+        </div>
+      </div>
+      <div class="favoritos container" id="favo">
+        <h2 class="mb-3">Favoritos</h2>
+        <div
+          id="carousel-exemplo"
+          class="carousel carousel-fade slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div data-bs-interval="5000" class="carousel-item active">
+              <img
+                class="d-block w-100"
+                src="./imagens/mad_max_estrada_da_furia_1_plano_critico.jpg"
+                alt=""
+              />
+              <div class="carousel-caption">
+                <h4>Mad Max</h4>
+                <p>Direção: Doug Mitchell George Miller P. J. Voeten</p>
+                <p>Roteiro: George Miller Brendan McCarthy</p>
+                <p>Elenco: Tom Hardy Charlize Theron Nicholas</p>
+                <button type="button" class="btn btn-primary">Assistir</button>
+              </div>
+            </div>
+            <div data-bs-interval="5000" class="carousel-item">
+              <img
+                class="d-block w-100"
+                src="./imagens/gladiador.jpeg"
+                alt=""
+              />
+              <div class="carousel-caption">
+                <h4>Gladiador</h4>
+                <p>Direção: Ridley Scott</p>
+                <p>Roteiro: Jão Logan William Nicholson</p>
+                <p>Elenco: Russell Crowe Joaquin Phoenix C.Nielsen</p>
+                <button type="button" class="btn btn-primary">Assistir</button>
+              </div>
+            </div>
+            <div data-bs-interval="5000" class="carousel-item">
+              <img
+                class="d-block w-100"
+                src="./imagens/Resident-Evil-serie.webp"
+                alt=""
+              />
+              <div class="carousel-caption">
+                <h4>Resident Evil</h4>
+                <p>Direção: Paul W. S. Anderson</p>
+                <p>Roteiro: Paul W. S. Anderson</p>
+                <p>Elenco: Milla Jovovich Michelle Rodriguez Ali Larter</p>
+                <button type="button" class="btn btn-primary play">
+                  Assistir
+                </button>
+              </div>
+            </div>
+            <button
+              data-bs-target="#carousel-exemplo"
+              data-bs-slide="prev"
+              class="carousel-control-prev"
+              type="button"
+            >
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button
+              data-bs-target="#carousel-exemplo"
+              data-bs-slide="next"
+              class="carousel-control-next"
+              type="button"
+            >
+              <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carousel-exemplo"
+                data-bs-slide-to="0"
+                class="active"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carousel-exemplo"
+                data-bs-slide-to="1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carousel-exemplo"
+                data-bs-slide-to="2"
+              ></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="filmes m-3" id="fil">
+        <h2>Filmes</h2>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-3">
+            <div class="card text-bg-dark">
+              <img src="imagens/Os-Gritos-do-Silêncio-13-1024x676.jpg" alt="" />
+              <div class="card-img-overlay filmes-descricao">
+                <h4 class="card-title">Gritos do silêncio</h4>
+                <p class="card-text">Direção: Roland Joffé</p>
+                <p class="card-text">Roteiro: Bruce Robinson</p>
+                <p class="card-text">
+                  Elenco:Sam Waterston, Haing S. Ngor, John Malkovich
+                </p>
+                <button type="button" class="btn btn-primary">
+                  <img
+                    src="imagens/play.png"
+                    width="20"
+                    height="20"
+                    alt=""
+                  />Assistir
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-3">
+            <div class="card text-bg-dark">
+              <img src="imagens/train-busan.webp" alt="" />
+              <div class="card-img-overlay filmes-descricao">
+                <h4 class="card-title">Train to Busan</h4>
+                <p class="card-text">Direção: Sang-ho Yeon</p>
+                <p class="card-text">Roteiro: Joo-Suk ParkSang-ho Yeon</p>
+                <p class="card-text">Elenco: Gong YooJung Yu-miMa Dong-seok</p>
+                <button type="button" class="btn btn-primary">
+                  <img
+                    src="imagens/play.png"
+                    width="20"
+                    height="20"
+                    alt=""
+                  />Assistir
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-3">
+            <div class="card text-bg-dark">
+              <img src="imagens/trafico-de-orgaos.jpeg" alt="" />
+              <div class="card-img-overlay filmes-descricao">
+                <h4 class="card-title">Tráfico de orgãos</h4>
+                <p class="card-text">Direção: Baltasar Kormákur</p>
+                <p class="card-text">
+                  Roteiro: Christian Escario, John Claflin
+                </p>
+                <p class="card-text">
+                  Elenco: Mia Stallard, Dermot Mulroney, Diane Kruger
+                </p>
+                <button type="button" class="btn btn-primary">
+                  <img
+                    src="imagens/play.png"
+                    width="20"
+                    height="20"
+                    alt=""
+                  />Assistir
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-3">
+            <div class="card text-bg-dark">
+              <img src="imagens/codigo-conduta.jpg" alt="" />
+              <div class="card-img-overlay filmes-descricao">
+                <h4 class="card-title">Codigo de conduta</h4>
+                <p class="card-text">Direção: F. Gary Gray</p>
+                <p class="card-text">Roteiro: Kurt Wimmer</p>
+                <p class="card-text">
+                  Elenco: Gerard Butler, Jamie Foxx, Leslie Bibb
+                </p>
+                <button type="button" class="btn btn-primary">
+                  <img
+                    src="imagens/play.png"
+                    width="20"
+                    height="20"
+                    alt=""
+                  />Assistir
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-3">
+            <div class="card text-bg-dark">
+              <img src="imagens/Madrugada-dos-Mortos-Sem-Cortes.jpg" alt="" />
+              <div class="card-img-overlay filmes-descricao">
+                <h4 class="card-title">Magrugada dos Mortos</h4>
+                <p class="card-text">Direção: Zack Snyder</p>
+                <p class="card-text">
+                  Roteiro: George A. Romero, George A. Romero
+                </p>
+                <p class="card-text">
+                  Elenco: Sarah Polley, Ving Rhames, Jake Weber
+                </p>
+                <button type="button" class="btn btn-primary">
+                  <img
+                    src="imagens/play.png"
+                    width="20"
+                    height="20"
+                    alt=""
+                  />Assistir
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-3">
+            <div class="card text-bg-dark">
+              <img src="imagens/exterminio.jpg" alt="" />
+              <div class="card-img-overlay filmes-descricao">
+                <h4 class="card-title">Exterminío</h4>
+                <p class="card-text">Direção: Juan Carlos Fresnadillo</p>
+                <p class="card-text">
+                  Roteiro: Rowan Joffe, Juan Carlos Fresnadillo
+                </p>
+                <p class="card-text">
+                  Elenco: Robert Carlyle, Rose Byrne, Harold Perrineau
+                </p>
+                <button type="button" class="btn btn-primary">
+                  <img
+                    src="imagens/play.png"
+                    width="20"
+                    height="20"
+                    alt=""
+                  />Assistir
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="filmes m-3" id="seri">
+        <h2>Séries</h2>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-3">
+            <div class="card text-bg-dark">
+              <img src="imagens/csi-lasvegas.jpg" alt="" />
+              <div class="card-img-overlay filmes-descricao">
+                <h4 class="card-title">Csi Las Vegas</h4>
+                <p class="card-text">Criado por Jason Tracey</p>
+                <p class="card-text">
+                  Elenco: Paula Newsome, Matt Lauria, Mandeep Dhillon
+                </p>
+                <p class="card-text">Nacionalidade EUA</p>
+                
+                <button type="button" class="btn btn-primary">
+                  <img
+                    src="imagens/play.png"
+                    width="20"
+                    height="20"
+                    alt=""
+                  />Assistir
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-3">
+            <div class="card text-bg-dark">
+              <img src="imagens/house.jpg" alt="" />
+              <div class="card-img-overlay filmes-descricao">
+                <h4 class="card-title">Dr. House</h4>
+                <p class="card-text">Criado por David Shore</p>
+                <p class="card-text">
+                  Elenco: Hugh Laurie, Robert Sean Leonard, Jesse Spencer
+                </p>
+                <p class="card-text">Nacionalidade EUA</p>
+                <button type="button" class="btn btn-primary">
+                  <img
+                    src="imagens/play.png"
+                    width="20"
+                    height="20"
+                    alt=""
+                  />Assistir
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-3">
+            <div class="card text-bg-dark">
+              <img src="imagens/all-of-us-are-dead.jpg" alt="" />
+              <div class="card-img-overlay filmes-descricao">
+                <h4 class="card-title">All of us are dead</h4>
+                <p class="card-text">Criado por Sung-il Chun</p>
+                <p class="card-text">Nacionalidade Coréia do Sul</p>
+
+                <button type="button" class="btn btn-primary">
+                  <img
+                    src="imagens/play.png"
+                    width="20"
+                    height="20"
+                    alt=""
+                  />Assistir
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-3">
+            <div class="card text-bg-dark">
+              <img src="imagens/eu-patroa-crianças.jpeg" alt="" />
+              <div class="card-img-overlay filmes-descricao">
+                <h4 class="card-title">Eu a patroa e as crianças</h4>
+                <p class="card-text">Criado por Damon Wayans, Don Reo</p>
+                <p class="card-text">
+                  Elenco: Damon Wayans, Tisha Campbell, Jennifer Freeman
+                </p>
+                <p class="card-text">Nacionalidade EUA</p>
+                <button type="button" class="btn btn-primary">
+                  <img
+                    src="imagens/play.png"
+                    width="20"
+                    height="20"
+                    alt=""
+                  />Assistir
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-3">
+            <div class="card text-bg-dark">
+              <img src="imagens/todo-mundo-odeia-chris.webp" alt="" />
+              <div class="card-img-overlay filmes-descricao">
+                <h4 class="card-title">Todo mundo odeia o Chris</h4>
+                <p class="card-text">Criado por Chris Rock, Ali LeRoi</p>
+                <p class="card-text">
+                  Elenco: Tyler James Williams, Tichina Arnold, Terry Crews
+                </p>
+                <p class="card-text">Nacionalidade EUA</p>
+                <button type="button" class="btn btn-primary">
+                  <img
+                    src="imagens/play.png"
+                    width="20"
+                    height="20"
+                    alt=""
+                  />Assistir
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-3">
+            <div class="card text-bg-dark">
+              <img src="imagens/casa-de-papel.jpg" alt="" />
+              <div class="card-img-overlay filmes-descricao">
+                <h4 class="card-title">La casa de papel</h4>
+                <p class="card-text">Criado por Álex Pina</p>
+                <p class="card-text">
+                  Elenco: Álvaro Morte, Úrsula Corberó, Pedro Alonso
+                </p>
+                <p class="card-text">Nacionalidade Espanha</p>
+                <button type="button" class="btn btn-primary">
+                  <img
+                    src="imagens/play.png"
+                    width="20"
+                    height="20"
+                    alt=""
+                  />Assistir
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div id="infos">
+        <div id="email">
+          <a href="#">cristiano.tobias40@gmail.com</a>
+          <img src="./assets/icons/seta.png" alt="Ícone de seta" />
+        </div>
+        <div id="redes-sociais">
+          <div>
+            <a href="#"
+              ><img src="./assets/icons/facebook.png" alt="Logo Facebook"
+            /></a>
+            <a href="#"
+              ><img src="./assets/icons/instagram.png" alt="Logo Instagram"
+            /></a>
+            <a href="#"
+              ><img src="./assets/icons/github.png" alt="Logo Github"
+            /></a>
+            <a href="#"
+              ><img src="./assets/icons/behance.png" alt="Logo Behance"
+            /></a>
+          </div>
+        </div>
+        <div>
+          <h3 class="cidade">São José dos Pinhais • Brasil</h3>
+        </div>
+      </div>
+    </footer>
+
+    <script src="Lib/bootstrap.bundle.min.js"></script>
+    <script>
+      let header = document.querySelector("header");
+
+      // Função nativa do windows chamada onscroll ao scrollar, armazena a função chamada scrollFunction(), que define quando o botão deve aparecer
+      window.onscroll = function scrollFunction() {
+        // Se, a quantidade de pixels percorridos na tela for igual à condição passada entre parentêses, então:
+        if (
+          document.body.scrollTop > 100 ||
+          document.documentElement.scrollTop > 100
+        ) {
+          // mostrar o botão
+          header.style.background = "rgb(20, 20, 20)";
+          // senão,
+        } else {
+          // não mostrar o botão
+          header.style.background = "transparent";
+        }
+      };
+      
+    </script>
+  </body>
+</html>
